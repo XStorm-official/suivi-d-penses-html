@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Application de suivi des dépenses</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Application de suivi des dépenses</h1>
+
+    <div class="input-container">
+      <input type="text" id="expense-amount" placeholder="Montant">
+      <input type="text" id="expense-category" placeholder="Catégorie">
+      <button onclick="addExpense()">Ajouter</button>
+    </div>
+
+    <div id="total-expenses">Total des dépenses : 0</div>
+
+    <div id="expenses-by-category">
+      <h2>Dépenses par catégorie :</h2>
+      <ul id="category-list"></ul>
+    </div>
+  </div>
+
+  <script src="static/script.js"></script>
+</body>
+</html>
